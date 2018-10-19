@@ -10,7 +10,8 @@
           <%= link_to "投稿", "#", class: "btn btn-primaryf" %>
         </li>
         <li>
-          <%= link_to "", "#", class: "nav-link commonNavIcon profile-icon" %>
+          <!-- プロフィールページに飛ぶ -->
+          <%= link_to "", user_path(current_user), class: "nav-link commonNavIcon profile-icon" %>
         </li>
       </ul>
     </div>
