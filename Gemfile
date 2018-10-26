@@ -69,3 +69,5 @@ gem 'jquery-rails'
 gem 'carrierwave', '~> 1.0'
 
 gem 'rmagick'
+
+gem "font-awesome-rails"

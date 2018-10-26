@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
 # ログインしているユーザーのみアクセスできるようにする
-  before_action :authenticate_user:
+  before_action :authenticate_user!
   def index
     @posts = Post.limit(10).includes(:photos)
   end
