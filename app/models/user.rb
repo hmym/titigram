@@ -1,6 +1,7 @@
 class User < ApplicationRecord
   has_many :posts, dependent: :destroy
   has_many :likes
+  has_many :comments
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   # :trackableを削除することにより、ログインが可能になる。削除しなければNoMethodError in Devise::SessionsController#createというエラーになる。
