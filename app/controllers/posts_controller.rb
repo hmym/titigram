@@ -25,6 +25,12 @@ class PostsController < ApplicationController
     end
   end
 
+  def show
+    @post = Post.find_by(id: params[:id])
+    @photos = @post.photos
+    @likes = @post.likes.includes(:user)
+  end
+
   private
     def post_params
       params.require(:post).permit(:caption).merge(user_id: current_user.id)
