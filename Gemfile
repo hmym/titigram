@@ -73,3 +73,5 @@ gem 'rmagick'
 gem "font-awesome-rails"
 
 gem 'pg', group: :production
+
+gem 'dotenv-rails'
